@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>民族数据分析</title>
+
+    <!-- google-fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- //google-fonts -->
+
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="static/css/style-liberty.css">
+
+</head>
+
+<body>
+
+
+<!--header-->
+<header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg stroke">
+            <h1>
+                <a class="navbar-brand" href="index.html">
+                    <span class="fa fa-lightbulb"></span> 民族数据分析
+                </a>
+            </h1>
+
+            <button class="navbar-toggler  collapsed bg-gradient" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-lg-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            民族介绍 <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="index">蒙古族</a>
+                            <a class="dropdown-item" href="index1">维吾尔族</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            热门词云 <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wordCould">蒙古族</a>
+                            <a class="dropdown-item" href="wordCould1">维吾尔族</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            地区分布 <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="area">蒙古族</a>
+                            <a class="dropdown-item" href="area1">维吾尔族</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            热门信息 <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="list">蒙古族</a>
+                            <a class="dropdown-item active" href="list1">维吾尔族</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            情感分布 <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="emo">蒙古族</a>
+                            <a class="dropdown-item" href="emo1">维吾尔族</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            共线分析 <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="xian">蒙古族</a>
+                            <a class="dropdown-item" href="xian1">维吾尔族</a>
+                        </div>
+                    </li>
+                    <!--/search-right-->
+                    <ul class="header-search">
+                        <li class="nav-item search-right">
+                            <a href="#search" class="btn search-btn btn-light" title="search"><span class="fas fa-search" aria-hidden="true"></span></a>
+                            <!-- search popup -->
+                            <div id="search" class="pop-overlay">
+                                <div class="popup">
+                                    <h3 class="title-w3l two mb-4 text-left">这里查找</h3>
+                                    <form action="#" method="GET" class="search-box d-sm-flex position-relative">
+                                        <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">
+                                        <button type="submit" class="btn btn-style btn-primary"> 查找</button>
+                                    </form>
+                                </div>
+                                <a class="close" href="#close">×</a>
+                            </div>
+                            <!-- /search popup -->
+                        </li>
+                    </ul>
+                    <!--//search-right-->
+                </ul>
+            </div>
+            <!-- search button -->
+
+            <!-- //search button -->
+
+            <!-- toggle switch for light and dark theme -->
+            <div class="cont-ser-position">
+                <nav class="navigation">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            <!-- //toggle switch for light and dark theme -->
+        </nav>
+    </div>
+</header>
+<!--//header-->
+
+<!-- about banner -->
+<section class="w3l-about-breadcrumb text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="banner-info-grid px-md-5">
+                <h2 class="w3l-title-breadcrumb mb-3">维吾尔族</h2>
+                <p class="inner-page-para px-lg-5">热点信息</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //about banner -->
+
+
+<section class="w3l-whychooseus py-5" >
+ <table class="table table-responsive-md" >
+     <thead>
+    <tr style="text-align: center;">
+      <th>排序</th>
+      <th>博文内容</th>
+      <th>发布博主</th>
+      <th>转发数</th>
+      <th>评论数</th>
+      <th>点赞数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>#为什么历史上很多维吾尔族名人，都有一个汉族姓名...</td>
+      <td>习五一</td>
+      <td>148</td>
+      <td>39</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>新疆维吾尔族轰6K飞行员，希望有一天能让西方人真正的重新正确的认识下你们，贴脸的那种...</td>
+      <td>-西野呼啸鹰-</td>
+      <td>71</td>
+      <td>25</td>
+      <td>917</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>反贼恨国党来看啊！维吾尔族丫头“被强迫”了...</td>
+      <td>小凡好摄</td>
+      <td>14</td>
+      <td>21</td>
+      <td>307</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>【颜值与实力并存！他是#首位维吾尔族轰6K飞行员#】2013年，穆特发·艾利穿上了飞行服，成为人民空军第一位维吾尔族轰-6K飞行员...</td>
+      <td>天山网</td>
+      <td>30</td>
+      <td>4</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>在喀什，歌舞是维吾尔族人的生活中不可或缺的内容，如狂放深沉的萨满舞、轻快敏捷的夏地亚那舞、柔美舒展的乃姆舞...</td>
+      <td>用户7824607430</td>
+      <td>15</td>
+      <td>22</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>以历史朝代的脉络写中国饮食文化的变迁 观点十分新颖且逻辑自洽 对文化传承以及很多日常司空见惯的菜肴有了新的理解...</td>
+      <td>一然一点都不二</td>
+      <td>32</td>
+      <td>42</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>疏附县乌帕尔镇“最美乌镇姑娘”评选大赛来啦！勇敢展示自己的风采，为家乡代言！...</td>
+      <td>魅力疏附官方微博</td>
+      <td>632</td>
+      <td>751</td>
+      <td>787</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>#笃定信心向未来喀什##水乡胡杨金凤泽普##万人说新疆喀什#跟着文旅局长探泽普美食...</td>
+      <td>水乡胡杨2020</td>
+      <td>213</td>
+      <td>347</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>喀什古城，活着的西域 不到喀什，不算到新疆 不到古城，不算到喀什...</td>
+      <td>亚斯江</td>
+      <td>87</td>
+      <td>125</td>
+      <td>345</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>迪丽热巴她是从新疆走出来的维吾尔族女孩儿，她的老师也曾担心过她的口音和台词...</td>
+      <td>岁月明迪</td>
+      <td>388</td>
+      <td>134</td>
+      <td>897</td>
+    </tr>
+  </tbody>
+     </table>
+
+</section>
+
+
+
+<!-- Stats Section-->
+<section class="w3l-stats-section py-5" id="stats">
+    <div class="container py-lg-5 py-md-4 py-3">
+        <div class="w3l-stats-inner-inf py-lg-4">
+            <div class="row stats-con">
+               <div class="col-lg-3 col-6 stats_info counter_grid">
+                    <div class="d-flex">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <p class="counter"> 8888 </p>
+                    </div>
+                    <h3>总浏览量</h3>
+                </div>
+                <div class="col-lg-3 col-6 stats_info counter_grid">
+                    <div class="d-flex">
+                        <i class="fas fa-users"></i>
+                        <p class="counter"> 1866 </p>
+                    </div>
+                    <h3>一键三连</h3>
+                </div>
+                <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-sm-5 mt-5">
+                    <div class="d-flex">
+                        <i class="fas fa-headset"></i>
+                        <p class="counter"> 6666 </p>
+                    </div>
+                    <h3>点赞总量</h3>
+                </div>
+                <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-sm-5 mt-5">
+                    <div class="d-flex">
+                        <i class="fas fa-project-diagram"></i>
+                        <p class="counter"> 6868 </p>
+                    </div>
+                    <h3>总转发量</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //Stats Section-->
+
+
+
+<!-- footer block -->
+<footer class="w3l-footer-29-main">
+
+            <!-- copyright -->
+            <p class="copy-footer-29 text-center mt-5 pb-2">© 22301275 王文杰 All rights reserved</p>
+            <!-- //copyright -->
+
+</footer>
+<!-- //footer block -->
+
+
+
+
+<!-- Js scripts -->
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- //move top -->
+
+<!-- common jquery plugin -->
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<!-- //common jquery plugin -->
+
+<!-- theme switch js (light and dark)-->
+<script src="static/js/theme-change.js"></script>
+<!-- //theme switch js (light and dark)-->
+
+<!--/stats-number-counter-->
+<script src="static/js/jquery.waypoints.min.js"></script>
+<script src="static/js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp();
+
+</script>
+<!--//stats-number-counter-->
+
+<!--/owlcarousel-->
+<script src="static/js/owl.carousel.js"></script>
+<!-- //tesimonials-->
+<script>
+    $(document).ready(function() {
+        $("#owl-demo1").owlCarousel({
+            loop: true,
+            nav: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                736: {
+                    items: 1,
+                    nav: false
+                }
+            }
+        })
+    })
+
+</script>
+<!-- //tesimonials-->
+
+<!-- MENU-JS -->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!-- //MENU-JS -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- //disable body scroll which navbar is in active -->
+
+<!--bootstrap-->
+<script src="static/js/bootstrap.min.js"></script>
+<!-- //bootstrap-->
+<!-- //Js scripts -->
+
+</body>
+
+</html>
